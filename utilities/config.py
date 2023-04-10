@@ -1,11 +1,12 @@
 import os
 import torch
 
+ROOT_DIR = os.path.abspath(os.curdir)
+
 #*********** SAVE/LOAD paths *****************
 
-SAVE_PATH = " "
-LOAD_PATH = " "
-
+SAVE_PATH = ROOT_DIR + "/saves/"
+LOAD_PATH = ROOT_DIR + "/saves/"
 
 
 #********** HYPER PARAMETERS *****************
@@ -27,9 +28,6 @@ TEST_ITERS = 1000
 #********* REPLAY PARAMETERS ****************
 
 STEPS = 100000
-
-
-
 
 #********** HELPER FUNCTIONS ****************
 
