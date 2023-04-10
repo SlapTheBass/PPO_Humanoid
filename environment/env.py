@@ -2,9 +2,9 @@ import gym
 import pybullet_envs
 
 ENV_ID = "HumanoidBulletEnv-v0"
-env = gym.make(ENV_ID, render = True)
 
 def PrintEnvironmentInfo():
+    env = MakeMainEnvironment()
     actions = env.action_space
     obs = env. observation_space
 
@@ -13,7 +13,8 @@ def PrintEnvironmentInfo():
     print(env)
 
 
-def GetMainEnvironment():
+def MakeMainEnvironment():
+    env = gym.make(ENV_ID, render = True)
     return env
 
 def MakeTestEnvironment():
