@@ -1,9 +1,10 @@
-from actor import *
-from critic import *
-from common import *
-from env import *
-from config import *
-from summary_writer import *
+
+from networks.actor import *
+from networks.critic import *
+from networks.common import *
+from environment.env import *
+from utilities.config import *
+from utilities.summary_writer import *
 from datetime import date
 
 import time
