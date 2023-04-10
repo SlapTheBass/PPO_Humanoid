@@ -13,5 +13,13 @@ def PrintEnvironmentInfo():
     print("Observation Space: ", obs)
     print(env)
 
+
+def GetMainEnvironment():
+    return env
+
+def MakeTestEnvironment():
+    test_env = gym.make(ENV_ID)
+    return test_env
+
 if __name__ == "__main__":
     PrintEnvironmentInfo()
