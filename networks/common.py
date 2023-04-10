@@ -3,7 +3,7 @@ import torch
 import math
 import numpy as np
 
-from config import *
+from utilities.config import *
 
 #**************************** AGENT MODEL ******************************
 
