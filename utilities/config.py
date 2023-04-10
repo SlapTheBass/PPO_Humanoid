@@ -5,9 +5,12 @@ ROOT_DIR = os.path.abspath(os.curdir)
 
 #*********** SAVE/LOAD paths *****************
 
-SAVE_PATH = ROOT_DIR + "/saves/"
-LOAD_PATH = ROOT_DIR + "/saves/"
+SAVE_PATH = "saves"
+LOAD_PATH = "saves/"
 
+#****** NEURAL NETWORK PARAMETERS ************
+
+HIDDEN_LAYERS_SIZE = {512, 256}
 
 #********** HYPER PARAMETERS *****************
 
