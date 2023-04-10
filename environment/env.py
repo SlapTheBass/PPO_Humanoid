@@ -2,8 +2,7 @@ import gym
 import pybullet_envs
 
 ENV_ID = "HumanoidBulletEnv-v0"
-render = True
-env = gym.make(ENV_ID, renders = render)
+env = gym.make(ENV_ID, render = True)
 
 def PrintEnvironmentInfo():
     actions = env.action_space
