@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from config import *
+from utilities.config import *
 
 
 #*************************** CRITIC ***********************************
@@ -24,7 +24,7 @@ class ModelCritic(nn.Module):
 
 if __name__ == "__main__":
 
-    from env import *
+    from environment.env import *
 
     env = GetMainEnvironment()
     device = IsCudaEnabled()
