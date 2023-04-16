@@ -2,6 +2,13 @@ import ptan
 import torch
 import math
 import numpy as np
+import sys
+
+from pathlib import Path
+
+file_dir = Path(__file__).parent
+module_path = str(file_dir.joinpath('..'))
+sys.path.append(module_path)
 
 from utilities.config import *
 

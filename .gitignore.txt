@@ -161,3 +161,8 @@ cython_debug/
 
 # VS code
 .vscode/
+
+__pycache__/
+*/__pycache__/
+*.pyc
+saves/

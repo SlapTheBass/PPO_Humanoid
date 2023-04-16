@@ -20,7 +20,7 @@ if __name__ == "__main__":
     save_path = os.path.join(ROOT_DIR, SAVE_PATH, current_date)
     os.makedirs(save_path, exist_ok=True)
 
-    env = GetMainEnvironment()
+    env = MakeMainEnvironment()
     test_env = MakeTestEnvironment()
 
     net_act = ModelActor(env.observation_space.shape[0], env.action_space.shape[0]).to(device)
@@ -127,4 +127,4 @@ if __name__ == "__main__":
                     count_steps += 1
 
             trajectory.clear()
-            AddStatistics(traj_adv_v, traj_ref_v, sum_loss_policy, sum_loss_value, count_steps, step_idx)
+            AddStatistics(writer, traj_adv_v, traj_ref_v, sum_loss_policy, sum_loss_value, count_steps, step_idx)
